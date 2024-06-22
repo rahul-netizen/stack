@@ -1,0 +1,91 @@
+{
+  "data_asset_type": null,
+  "expectation_suite_name": "default",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_set",
+      "kwargs": {
+        "column_set": [
+          "What Country or Region do you live in?",
+          "Which US State or Territory do you live in?",
+          "How old are you?",
+          "How many years of IT/Programming experience do you have?",
+          "How would you best describe the industry you work in?",
+          "Which best describes the size of your company?",
+          "Which of the following best describes your occupation?",
+          "How likely is it that a recommendation you make will be acted upon?",
+          "What is your involvement in purchasing? You can choose more than 1.",
+          "Unnamed: 9",
+          "Unnamed: 10",
+          "Unnamed: 11",
+          "Unnamed: 12",
+          "Unnamed: 13",
+          "Unnamed: 14",
+          "What types of purchases are you involved in?",
+          "Unnamed: 16",
+          "Unnamed: 17",
+          "Unnamed: 18",
+          "Unnamed: 19",
+          "Unnamed: 20",
+          "What is your budget for outside expenditures (hardware, software, consulting, etc) for 2011?",
+          "Unnamed: 22",
+          "Unnamed: 23",
+          "Unnamed: 24",
+          "Unnamed: 25",
+          "Unnamed: 26",
+          "Unnamed: 27",
+          "Unnamed: 28",
+          "What type of project are you developing?",
+          "Which languages are you proficient in?",
+          "Unnamed: 31",
+          "Unnamed: 32",
+          "Unnamed: 33",
+          "Unnamed: 34",
+          "Unnamed: 35",
+          "Unnamed: 36",
+          "Unnamed: 37",
+          "Unnamed: 38",
+          "Unnamed: 39",
+          "Unnamed: 40",
+          "Unnamed: 41",
+          "Unnamed: 42",
+          "What operating system do you use the most?",
+          "Please rate your job/career satisfaction",
+          "Including bonus, what is your annual compensation in USD?",
+          "Which technology products do you own? (You can choose more than one)",
+          "Unnamed: 47",
+          "Unnamed: 48",
+          "Unnamed: 49",
+          "Unnamed: 50",
+          "Unnamed: 51",
+          "Unnamed: 52",
+          "Unnamed: 53",
+          "Unnamed: 54",
+          "Unnamed: 55",
+          "Unnamed: 56",
+          "Unnamed: 57",
+          "Unnamed: 58",
+          "Unnamed: 59",
+          "Unnamed: 60",
+          "Unnamed: 61",
+          "Unnamed: 62",
+          "In the last 12 months, how much money have you spent on personal technology-related purchases? ",
+          "Which of our sites do you frequent most?"
+        ]
+      },
+      "meta": {
+        "notes": {
+          "content": [
+            "Based on our domain expertise, these columns should exist always"
+          ],
+          "format": "markdown",
+          "source": "https://survey.stackoverflow.co/"
+        }
+      }
+    }
+  ],
+  "ge_cloud_id": null,
+  "meta": {
+    "great_expectations_version": "0.18.15"
+  }
+}
