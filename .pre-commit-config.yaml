@@ -11,6 +11,11 @@ repos:
       - id: check-ast
       - id: check-json
       - id: no-commit-to-branch
+      - id: check-case-conflict
+      - id: debug-statements
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: requirements-txt-fixer
         args:
           [
             "--branch",
