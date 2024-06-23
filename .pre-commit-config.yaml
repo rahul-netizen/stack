@@ -43,7 +43,7 @@ repos:
   #   hooks:
   #     - id: mypy
         # args: [--show-error-codes, --ignore-missing-imports]
-        
+
   - repo: https://github.com/PyCQA/flake8
     rev: 7.0.0
     # noqa or # noqa: E234 can be used to suspress flake8 checks

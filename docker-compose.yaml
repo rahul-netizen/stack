@@ -14,15 +14,15 @@ x-airflow-common:
     AIRFLOW_CONN_POSTGRES_DEFAULT: postgres://airflow:airflow@postgres:5432/airflow
 
   volumes:
-    - ./dags:/opt/airflow/dags
-    - ./data:/opt/airflow/data
-    - ./visualization:/opt/airflow/visualization
-    - ./logs:/opt/airflow/logs
-    - ./plugins:/opt/airflow/plugins
-    - ./tests:/opt/airflow/tests
-    - ./temp:/opt/airflow/temp
-    - ./migrations:/opt/airflow/migrations
-    - ./.pre-commit-config.yaml:/.pre-commit-config.yaml
+    - ./airflow/dags:/opt/airflow/dags
+    - ./airflow/data:/opt/airflow/data
+    - ./airflow/visualization:/opt/airflow/visualization
+    - ./airflow/logs:/opt/airflow/logs
+    - ./airflow/plugins:/opt/airflow/plugins
+    - ./airflow/tests:/opt/airflow/tests
+    - ./airflow/temp:/opt/airflow/temp
+    - ./airflow/migrations:/opt/airflow/migrations
+    - ./.pre-commit-config.yaml:/opt/airflow/.pre-commit-config.yaml
   user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
   depends_on:
     postgres:

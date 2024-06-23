@@ -24,11 +24,11 @@ docker-spin:
 				docker compose up airflow-init && docker compose up --build -d
 
 perms:
-			sudo mkdir -p plugins temp dags tests migrations data visualization && && sudo chmod -R u=rwx,g=rwx,o=rwx logs plugins temp dags tests migrations data visualization
+		sudo mkdir airflow && cd airflow &&	sudo mkdir -p plugins temp dags tests migrations data visualization && sudo chmod -R u=rwx,g=rwx,o=rwx logs plugins temp dags tests migrations data visualization
 
 up: perms docker-spin
 
-down: 
+down:
 		docker compose down --volumes --rmi all
 
 restart:
@@ -61,9 +61,9 @@ pytest:
 # ci : format lint secure
 
 deps:
-		pip3 install -r containers/airflow/requirements.txt
+		pip3 install -r ./containers/airflow/requirements.txt
 
 precommit:
-			docker exec webserver git init . && pre-commit run --all-files
+			docker exec -u root webserver git init . && pre-commit run --all-files && ls
 
-ci	: deps precommit
+ci	: precommit
